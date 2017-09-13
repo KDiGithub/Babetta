@@ -11,6 +11,7 @@
 		width:8%;
 		height:auto;
 	}
+	
 }
 
 @media only screen and (min-width:640px) and (max-width:809px){
@@ -25,6 +26,10 @@
 		width:13%;
 		height:auto;
 	}
+	.master img{
+		width:200px;
+		height:auto;
+	}
 }
 
 @media only screen and (min-width:490px) and (max-width:639px){
@@ -35,13 +40,17 @@
 		width:15%;
 		height:auto;
 	}
-	.icon-footer {
+		.icon-footer {
 		width:13%;
+		height:auto;
+	}
+	.master img{
+		width:180px;
 		height:auto;
 	}
 }
 
-@media only screen and (max-width:489px){
+@media only screen and (min-width:420px) and (max-width:489px){
 	html{font-size:11px;}
 	.icon {
 		margin-top:20px;
@@ -53,7 +62,28 @@
 		width:13%;
 		height:auto;
 	}
-	
+	.master img{
+		width:160px;
+		height:auto;
+	}
+}
+
+@media only screen and (max-width:419px){
+	html{font-size:9px;}
+	.icon {
+		margin-top:20px;
+		margin-left:1%;
+		width:15%;
+		height:auto;
+	}
+	.icon-footer {
+		width:13%;
+		height:auto;
+	}
+	.master img{
+		width:140px;
+		height:auto;
+	}
 }
 
 body {
@@ -65,6 +95,7 @@ body {
     font-family: "Century Gothic", "Arial", sans-serif;
     color: #404040;
     background-color: white;
+	
 }
 
 .container {
@@ -281,14 +312,17 @@ input[type="checkbox"]{
 }
 
 .m-div {
-	margin: 0px 22%;
-	margin-top:10px;
+	margin: 10px 0 0 25%;
 }
 
 .master {
 	display: inline-block;
-	margin-left:90px;
+	margin-right:10%;
 	margin-bottom:25px;
+}
+
+.master:last-child {
+	margin-right:0;
 }
 
 .master p {
@@ -303,7 +337,7 @@ input[type="checkbox"]{
 }
 
 .feedback-form {
-    width: 70%;/*630px;*/
+    width: 80%;
 	margin:0;
 	padding:0;
 }
@@ -328,7 +362,7 @@ input[type="checkbox"]{
 .feedback-form-group label {
     display: inline-block;
     padding: 5px 0;
-    padding-left: 17px;
+    padding-left: 12px;
     font-size: 0.64rem;/*12px;*/
     text-transform: uppercase;
 }
@@ -337,7 +371,7 @@ input[type="checkbox"]{
 .feedback-form input[type="tel"] {
     box-sizing: border-box;
     width: 100%;
-    height: 45px;
+    height: 40px;
     padding: 9px 15px;
     font: inherit;
     color: inherit;
@@ -401,21 +435,23 @@ footer {
 .bottom-footer{
 	border-top:1px solid #5e5e5e;
 	position:relative;
-	top:120px;
+	top:110px;
+	left:-30px;
+	white-space: nowrap;
 }
 
 .bottom-footer p {
 	float:left;
-	font-size:1.5rem;
+	font-size:1.4rem;
 	padding-top:15px;
 }
 
 .social-btn {
     display: inline-block;
-    width: 35px;
-    height: 35px;
-    margin-left: 10px;
-	margin-top: 25px;
+    width: 27px;
+    height: 27px;
+    margin-left: 8px;
+	margin-top: 2rem;
     color: #ffffff;
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
@@ -433,9 +469,9 @@ footer {
 }
 
 .social-btn-vk {
-    background-position: 4px -250px;
+    background-position: 2px -10px;
 }
 
 .social-btn-in {
-    background-position: 1px -370px;
+    background-position: -1px -112px;
 }
