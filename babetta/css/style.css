@@ -70,6 +70,7 @@
 
 @media only screen and (max-width:419px){
 	html{font-size:9px;}
+	
 	.icon {
 		margin-top:20px;
 		margin-left:1%;
@@ -83,6 +84,9 @@
 	.master img{
 		width:140px;
 		height:auto;
+	}
+	.prew p {
+		font-size:2rem !important;
 	}
 }
 
@@ -418,7 +422,7 @@ footer {
 	color:#000000;
 	font-size:0rem;
 	background:url("../img/up.png") no-repeat center center;
-    padding: 1.6rem;
+    padding: 2rem;
 	vertical-align:middle;
     text-decoration: none;
 }
