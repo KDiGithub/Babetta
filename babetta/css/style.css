@@ -207,6 +207,8 @@ nav {
 
 .prew {
 	height:360px;
+	
+	display: table;
 }
 
 .prew p {
@@ -215,6 +217,9 @@ nav {
 	width:88%;
 	font-size:1.6rem;
 	line-height:2.9rem;
+	
+	display: table-cell; /*абзац будет отображаться как ячейка таблицы (TD)*/
+	vertical-align: middle; /*выравниваем абзац по вертикали*/
 }
 
 .price, .masters, .call{
@@ -252,7 +257,7 @@ h2 {
     font-size: 0.7rem;/*16px;*/
 }
 
-.tip a {
+.tip a, .us a {
 	text-decoration: none;
 	color:#b5d38d;
 }
@@ -417,7 +422,7 @@ footer {
 .btn-up {
 	position:fixed;
 	right:2%;
-	top:91%;
+	top:90%;
 	border-radius:50%;
 	color:#000000;
 	font-size:0rem;
@@ -428,7 +433,7 @@ footer {
 }
 
 .btn-up:hover {
-	top:91.5%;
+	top:90.5%;
 	right:2%;
 }
 
@@ -439,9 +444,10 @@ footer {
 .bottom-footer{
 	border-top:1px solid #5e5e5e;
 	position:relative;
-	top:110px;
+	top:120px;
 	left:-30px;
 	white-space: nowrap;
+	width:100%;
 }
 
 .bottom-footer p {
@@ -478,4 +484,11 @@ footer {
 
 .social-btn-in {
     background-position: -1px -112px;
+}
+
+.bottom-footer .us {
+	position:absolute;
+	right:1%;
+	bottom:-20px;
+	font-size:0.7rem;
 }
